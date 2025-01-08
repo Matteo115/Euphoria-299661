@@ -1,5 +1,4 @@
 # Euphoria Project: Classify Islands by Happiness
-https://github.com/Matteo115/Euphoria/tree/main
 
 ### Team Members:
 - Matteo Bruni 
@@ -26,7 +25,6 @@ By systematically analyzing and clustering islands, we can get insights of what 
 ### Exploratory Data Analysis (EDA)
 EDA was conducted to understand the dataset and prepare it for clustering analysis. Key steps included:
 
-<<<<<<< HEAD
 - **Initial Inspection**: We analyzed the structure, the completedness and basic statistics of the dataset. We also checked for duplicate rows in order to ensure data integrity.
 - **Outlier Handling**: Outliers in numerical features were detected using z-scores. Extreme values were capped to reduce their impact on clustering.
 - **Missing Values**: Missing data was analyzed using visualizations (`missingno`) and summary statistics. For missing values:
@@ -80,7 +78,6 @@ In order to segment the islands, we tested 3 different clustering algorithms:
   - *Challenges*:
     - Requires specifying the number of clusters beforehand.
     - Sensitive to outliers and non-spherical cluster shapes.
-<<<<<<< HEAD
 =======
   - *How it was used*: KMeans was used as a baseline clustering method. Its output was used as a starting point to understand the data structure; further improvement in the structure was achieved by the density based (DBSCAN) and hierarchical techniques (Hierarchical clustering).
 
