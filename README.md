@@ -67,7 +67,6 @@ Features were selected based on their relevance to happiness and clustering obje
 - **Domain Knowledge**: Features that are related to geographic attributes (e.g., proximity to water, terrain), environmental factors (e.g., vegetation, climate), and amenities (e.g., access to services, infrastructure) were prioritized because they are expected to affect happiness.
 - **Feature Engineering**: Additional derived features, such as population density and average income per capita, were created to enhance the dataset.
 - **Dimensionality Reduction**: Principal Component Analysis (PCA) was applied to reduce the feature dimensionality (number of features) while retaining 95% of the variance. PCA made the task of clustering easier by transforming the features into uncorrelated principal components.
->>>>>>> 2c64b51c92dac33f9c7e15b39c1255246b4c1900
 
 ### Clustering Algorithms
 In order to segment the islands, we tested 3 different clustering algorithms:
@@ -84,7 +83,6 @@ In order to segment the islands, we tested 3 different clustering algorithms:
 <<<<<<< HEAD
 =======
   - *How it was used*: KMeans was used as a baseline clustering method. Its output was used as a starting point to understand the data structure; further improvement in the structure was achieved by the density based (DBSCAN) and hierarchical techniques (Hierarchical clustering).
->>>>>>> 2c64b51c92dac33f9c7e15b39c1255246b4c1900
 
 - **DBSCAN**:
   - *Description*: Density-Based Spatial Clustering of Applications with Noise (DBSCAN) is a clustering algorithm that identifies core samples of high density and expands clusters from them. It groups points that are closely packed together (based on a distance metric) and marks points that are alone in low-density regions as noise.
@@ -99,10 +97,8 @@ In order to segment the islands, we tested 3 different clustering algorithms:
   - *Challenges*:
     - Sensitive to the choice of `eps` and `min_samples`.
     - Struggles with datasets containing clusters of different density or very high dimensionality.
-<<<<<<< HEAD
 =======
   - *Usage in this Project*: DBSCAN was particularly useful for identifying isolated islands and differentiating between densely populated and sparsely populated clusters while treating outliers as noise.
->>>>>>> 2c64b51c92dac33f9c7e15b39c1255246b4c1900
 
 - **Hierarchical Clustering**:
   - *Description*: Hierarchical clustering builds a hierarchy of clusters by either merging smaller clusters (agglomerative) or splitting larger clusters (divisive). The result is a dendrogram that represents the cluster relationships at various levels.
@@ -115,36 +111,29 @@ In order to segment the islands, we tested 3 different clustering algorithms:
   - *Challenges*:
     - Computationally expensive for large datasets.
     - May be sensitive to the choice of distance metric and linkage method.
-<<<<<<< HEAD
 =======
   - *Usage in this Project*: Hierarchical clustering was used to visualize the relationships between clusters and to get a better understanding of the dataset's structure. The dendrogram provided insights into the natural grouping of islands, guiding us in the selection of an appropriate number of clusters for other methods.
->>>>>>> 2c64b51c92dac33f9c7e15b39c1255246b4c1900
 
 Each algorithm's performance was evaluated using metrics such as silhouette score.
 
 ## [Section 3] Experimental Design
 
 ### Experiment 1: Clustering Analysis
-<<<<<<< HEAD
 - **Purpose**: Segment the islands into groups based on happiness and related features.
 =======
 - **Purpose**: Segmenting the islands into groups based on happiness and related features.
->>>>>>> 2c64b51c92dac33f9c7e15b39c1255246b4c1900
 - **Baseline(s)**: Random clustering and basic statistical groupings.
 - **Evaluation Metrics**: Silhouette score.
 
 ### Experiment 2: Feature Importance
-<<<<<<< HEAD
 - **Purpose**: Determine the main factors that influence happiness levels.
 =======
 - **Purpose**: Determine which are the main factors that influence happiness level.
->>>>>>> 2c64b51c92dac33f9c7e15b39c1255246b4c1900
 - **Baseline(s)**: No clustering (raw data analysis).
 - **Evaluation Metrics**: Correlation and clustering algorithm.
 
 ---
 
-<<<<<<< HEAD
 ## [Section 4] Clustering Results
 =======
 ## [Section 4] Results
@@ -152,7 +141,6 @@ Each algorithm's performance was evaluated using metrics such as silhouette scor
 ### Main Findings
 - Islands can be grouped into 3-5 distinct clusters based on happiness levels and features.
 - Environmental factors like greenery and access to water are strongly correlated with happiness scores.
->>>>>>> 2c64b51c92dac33f9c7e15b39c1255246b4c1900
 
 ### Figures and Tables
 
@@ -242,7 +230,6 @@ Each algorithm's performance was evaluated using metrics such as silhouette scor
 ### Summary
 This project highlights the potential of machine learning techniques, like clustering, to segment and classify islands in Euphoria by happiness levels.
 Our approach, combining KMeans, DBSCAN, and Hierarchical clustering, revealed strong patterns in island happiness levels that remained consistent across different methodologies. Key findings showed that island happiness is strongly influenced by a combination of:
-<<<<<<< HEAD
 - Natural environmental factors (island size)
 - Infrastructure development (water availability, and shelters availability)
 - Social dynamics (regions)
