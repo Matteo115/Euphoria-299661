@@ -226,6 +226,3 @@ Our approach, combining KMeans, DBSCAN, and Hierarchical clustering, revealed st
 - Social dynamics (regions)
 
 Those results can be used to help virtual travelers choose the best places based on their tastes and needs as well as to help island developers make correct and useful decisions in order to improve the resident satisfaction.
->>>>>>> 2c64b51c92dac33f9c7e15b39c1255246b4c1900
-
-Those results can be used to help virtual travelers choose the best places based on their tastes and needs as well as to help island developers make correct and useful decisions in order to improve the resident satisfaction.
