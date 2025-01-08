@@ -51,7 +51,7 @@ Features were selected based on their relevance to happiness and clustering obje
   4. **Dataset Cleaning**: Removes unnecessary columns (e.g., `trade_goods`, `entry_fee`, `x_coordinate`) to keep only relevant features.
 
   5. **Scaling and Final Dataset**: Normalizes numeric columns using Min-Max Scaling and verifies the dataset's structure and summary statistics.
-=======
+
 - **Initial Inspection**: We analyzed the structure, the completedness and basic statistics of the dataset. We identiifed and removed duplicate rows in order to ensure data integrity.
 - **Outlier Handling**: Outliers in numerical features were detected using z-scores. Extreme values were either removed or capped to reduce their impact on clustering.
 - **Missing Values**: Missing data was analyzed using visualizations (`missingno`) and summary statistics. For missing values:
@@ -78,7 +78,6 @@ In order to segment the islands, we tested 3 different clustering algorithms:
   - *Challenges*:
     - Requires specifying the number of clusters beforehand.
     - Sensitive to outliers and non-spherical cluster shapes.
-=======
   - *How it was used*: KMeans was used as a baseline clustering method. Its output was used as a starting point to understand the data structure; further improvement in the structure was achieved by the density based (DBSCAN) and hierarchical techniques (Hierarchical clustering).
 
 - **DBSCAN**:
@@ -94,7 +93,6 @@ In order to segment the islands, we tested 3 different clustering algorithms:
   - *Challenges*:
     - Sensitive to the choice of `eps` and `min_samples`.
     - Struggles with datasets containing clusters of different density or very high dimensionality.
-=======
   - *Usage in this Project*: DBSCAN was particularly useful for identifying isolated islands and differentiating between densely populated and sparsely populated clusters while treating outliers as noise.
 
 - **Hierarchical Clustering**:
@@ -117,22 +115,18 @@ Each algorithm's performance was evaluated using metrics such as silhouette scor
 
 ### Experiment 1: Clustering Analysis
 - **Purpose**: Segment the islands into groups based on happiness and related features.
-=======
 - **Purpose**: Segmenting the islands into groups based on happiness and related features.
 - **Baseline(s)**: Random clustering and basic statistical groupings.
 - **Evaluation Metrics**: Silhouette score.
 
 ### Experiment 2: Feature Importance
 - **Purpose**: Determine the main factors that influence happiness levels.
-=======
 - **Purpose**: Determine which are the main factors that influence happiness level.
 - **Baseline(s)**: No clustering (raw data analysis).
 - **Evaluation Metrics**: Correlation and clustering algorithm.
 
 ---
 
-## [Section 4] Clustering Results
-=======
 ## [Section 4] Results
 
 ### Main Findings
@@ -230,11 +224,6 @@ Our approach, combining KMeans, DBSCAN, and Hierarchical clustering, revealed st
 - Natural environmental factors (island size)
 - Infrastructure development (water availability, and shelters availability)
 - Social dynamics (regions)
-=======
-- Natural environmental factors (vegetation density, access to water, climate patterns)
-- Infrastructure development (transportation networks, public facilities)
-- Social dynamics (population density, community engagement levels)
-- Economic indicators (average income, business diversity)
 
 Those results can be used to help virtual travelers choose the best places based on their tastes and needs as well as to help island developers make correct and useful decisions in order to improve the resident satisfaction.
 >>>>>>> 2c64b51c92dac33f9c7e15b39c1255246b4c1900
